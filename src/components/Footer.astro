@@ -1,14 +1,16 @@
 ---
-// const platform = ["github", "LinkedIn"];
-// const username = ["gregoryrad", "gregradcliffe"];
 import Social from './Social.astro';
 ---
+<style>
+    footer {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+</style>
 
 <footer>
-    <!-- <p>Learn more about my projects on <a href={`https://www.${platform[0]}.com/${username[0]}`}>{platform[0]}</a>!</p>
-    <p>Connect with me on <a href={`https://www.${platform[1]}.com/in/${username[1]}`}>{platform[1]}</a>!</p> -->
-
-    <Social platform="LinkedIn" username="in/gregradcliffe" />
-    <Social platform="github" username="gregoryrad" />
-    <Social platform="bluesky" username="g-rad" />
+    <Social platform="LinkedIn" url="linkedin.com/in" username="gregradcliffe" />
+    <Social platform="github" url="github.com" username="gregoryrad" />
+    <Social platform="bluesky" url="bsky.app/profile" username="g-rad.bsky.social" />
 </footer>
